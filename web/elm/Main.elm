@@ -1,5 +1,7 @@
 module Main exposing (..)
-import Html exposing (text, Html)
+import Html exposing (Html, text, div)
+import Html.Attributes exposing (class)
+import Components.RecipeList as RecipeList
 main : Html a
 main =
-  text "Hello Foo"
+  div [ class "elm-app" ] [ RecipeList.view ]
